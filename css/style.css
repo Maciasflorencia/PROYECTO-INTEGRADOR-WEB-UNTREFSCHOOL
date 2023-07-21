@@ -1,0 +1,625 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+    --primario: #1F8A70;
+    --secundario: #FC7300;
+    --tercero: #00425A;
+    --cuarto: #181823;
+    --quinto: #EFF5F5;
+    --sexto: #edede9;
+    --text-primario: 'Belanosima', sans-serif;
+    --text-secundario:'Poppins', sans-serif;
+}
+
+/* ESCRITORIO */
+
+@media screen and (max-width: 2560px) and (min-width: 769px) {
+    .header{
+        width: 100%;
+        background: var(--primario);
+    }
+
+    #btn-menu{
+        display: none;
+    }
+
+    .header label {
+        display: none;
+    }
+
+    .menu ul{
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        list-style: none;
+        padding: 0;    
+
+    }
+
+    .menu li:hover{
+        background-color: rgba(0, 0, 0, .3);
+    }
+
+    .menu li a{
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color:var(--secundario)
+    }
+    /* SECTION-1 */
+
+    .section-img{
+        background-image: url(../multimedia/img/escuela.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        }
+
+    .h1-default{
+        color: var(--secundario);
+        margin-bottom: 25px;
+        font-family: 'Belanosima', sans-serif;
+        font-size: 4.2rem;
+        text-shadow:1px 1px 3px rgba(0, 0, 0, .8);
+        }
+
+    .img-section{
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-escuela{
+         width: 600px;
+         height: 400px;
+         margin: 0 auto;
+             
+
+        }
+
+    /* SECTION-DEFAULT */
+
+    .section-default{
+        width: 90%;
+        margin: 0 auto;
+    }    
+    
+    #porque-elegirnos{
+        margin: 10px 0;
+    }
+
+
+    .h2-default {
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        color: var(--tercero);
+        font-family: 'Belanosima', sans-serif;
+        font-weight: 700;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+         }
+    
+    .p-default {
+        padding: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+         }
+
+    /* CARDS */
+
+    .card-conteiner{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto ;
+        grid-template-areas:   
+            "card1 card2 card3 card4"
+            "card1 card2 card3 card4";
+        gap: 10px;    
+    } 
+
+    .cards1{
+        grid-area: card1;
+    }
+    .cards2{
+        grid-area: card2;
+    }
+    .cards3{
+        grid-area: card3;
+    }
+    .cards4{
+        grid-area: card4;
+    }
+
+    .text-card-conteiner{
+        height: 160px;
+    }
+
+    .img-cards{
+        margin-bottom: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background: #e5e7e7;
+        border-radius: 10px;
+        height: 450px;
+    }
+
+    .card-h3{
+        color: var(--primario);
+        font-family: var(--text-primario);
+        font-weight: 300;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .text-card-conteiner  p {
+        font-family: var(--text-secundario);
+        font-size: .9rem;
+    }
+
+    .img-elegirnos{
+        width: 100%;
+        height: 200px;
+    }
+
+     /* ULTIMAS NOTICIAS */
+
+     .h3-default{
+        font-family: var(--text-primario);
+        color: var(--secundario);
+        font-size: 1.7rem;
+    }
+
+    .footer{
+        background-color: var(--cuarto);
+        margin-top: 10px;
+        padding: 10px;
+        display: flex;
+        gap: 20px;
+        justify-content: space-around;
+        height: 200px;
+    }
+
+    .footer-title{
+        color: var(--secundario);
+        padding: 5px;
+        font-family: var(--text-primario);
+        letter-spacing: 1px;
+        font-weight: 200;
+        font-size: 1.2rem;
+    }
+
+    .footer-instituto  a {
+        text-decoration: none;
+        color: var(--quinto);
+        font-size: 1.1rem;
+    }
+
+
+    .list-footer > li > a {
+        text-decoration: none;
+        color: var(--quinto);
+        font-size: 1.1rem;
+        
+    }
+
+    .footer-redes-sociales li {
+       margin-bottom: 10px; 
+       
+    }
+
+    .footer-contacto li {
+        margin-bottom: 10px;
+    }
+
+
+}
+
+/* TABLET */
+
+@media screen and (max-width: 768px) and (min-width: 425px) {
+
+
+
+    .header{
+        width: 100%;
+        background: var(--primario);
+    }
+
+    #btn-menu {
+        display: none;
+    }
+
+    .header label{
+        display: block;
+        padding: 10px;
+        font-size: 25px;
+        margin-top: 10px;
+        color: var(--secundario);
+    }
+
+    .menu{
+        position: absolute;
+        background: var(--primario);
+        width: 70%;
+        margin-left: -72%;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-top: 1px solid var(--quinto);
+        padding: 10px;
+    }
+
+    .menu li a{
+        text-decoration: none;
+        color: var(--secundario);
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+        transition: all .5s ;
+
+    }
+
+    /* SECTION-1 */
+
+    .section-img{
+        background-image: url(../multimedia/img/escuela.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        }
+
+    .h1-default{
+        color: var(--secundario);
+        margin-bottom: 25px;
+        font-family: 'Belanosima', sans-serif;
+        font-size: 4rem;
+        text-shadow:1px 1px 3px rgba(0, 0, 0, .8);
+        }
+
+    .img-escuela{
+            width: 100%;       
+            }
+
+        /* SECTION-DEFAULT */
+
+    .section-default{
+        width: 90%;
+        margin: 0 auto;
+    }    
+    
+    
+    .h2-default {
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        color: var(--tercero);
+        font-family: 'Belanosima', sans-serif;
+        font-weight: 700;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+         }
+    
+    .p-default {
+        padding: 5px;
+        font-family: 'Poppins', sans-serif;
+         }
+
+     /* CARDS */
+
+    .card-conteiner{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:   
+            "card1 card1 card2 card2"
+            "card1 card1 card2 card2"
+            "card3 card3 card4 card4"
+            "card3 card3 card4 card4";
+        gap: 10px;    
+    } 
+
+    .cards1{
+        grid-area: card1;
+    }
+    .cards2{
+        grid-area: card2;
+    }
+    .cards3{
+        grid-area: card3;
+    }
+    .cards4{
+        grid-area: card4;
+    }
+
+    .text-card-conteiner{
+        height: 160px;
+    }
+
+    .img-cards{
+        margin-bottom: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background: #e5e7e7;
+        border-radius: 10px;
+        height: 450px;
+    }
+
+    .card-h3{
+        color: var(--primario);
+        font-family: var(--text-primario);
+        font-weight: 300;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .text-card-conteiner  p {
+        font-family: var(--text-secundario);
+        font-size: .9rem;
+    }
+
+
+    .img-elegirnos{
+        width: 100%;
+        height: 230px;
+    }
+
+     /* ULTIMAS NOTICIAS */
+
+     .h3-default{
+        font-family: var(--text-primario);
+        color: var(--secundario);
+    }
+
+    .footer{
+        background-color: var(--cuarto);
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .footer-title{
+        color: var(--secundario);
+        padding: 5px;
+        font-family: var(--text-primario);
+        letter-spacing: 1px;
+        font-weight: 200;
+    }
+
+    .footer-instituto  a {
+        text-decoration: none;
+        color: var(--quinto);
+        font-size: 1.1rem;
+    }
+
+
+    .list-footer > li > a {
+        text-decoration: none;
+        color: var(--quinto);
+        font-size: 1.1rem;
+        
+    }
+
+
+}
+
+/* CELULAR */
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+    
+    /* HEADER */
+    
+    .header{
+        width: 100%;
+        background: var(--primario);
+        height: 50px;
+    }
+
+    #btn-menu {
+        display: none;
+    }
+
+    .header label{
+        display: block;
+        padding: 5px;
+        font-size: 20px;
+        margin-top: 10px;
+        color: var(--secundario);
+
+    }
+
+    .menu{
+        position: absolute;
+        background: var(--primario);
+        width: 70%;
+        margin-left: -72%;
+        margin-top: 5px;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-top: 1px solid var(--quinto);
+        padding: 10px;
+    }
+
+    .menu li a{
+        text-decoration: none;
+        color: var(--secundario);
+        font-family: 'Poppins', sans-serif;
+        font-size: .9rem;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+        transition: all .5s;
+        margin-top: 5px;
+
+    }
+
+    /* SECTION-1 */
+ 
+  .section-img{
+    background-image: url(../multimedia/img/escuela.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    }
+
+    .h1-default{
+        color: var(--secundario);
+        margin-bottom: 25px;
+        font-family: 'Belanosima', sans-serif;
+        font-size: 2.5rem;
+        text-shadow:1px 1px 3px rgba(0, 0, 0, .8);
+    }
+
+    .img-escuela{
+    width: 100%;
+
+    }
+
+
+    /* SECTION-DEFAULT */
+
+    .section-default{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    .h2-default{
+        padding: 8px;
+        display: flex; 
+        justify-content: center;
+        color: var(--tercero);
+        font-family: 'Belanosima', sans-serif;
+        font-weight: 600;
+        letter-spacing: 1px;
+
+    }
+
+    .p-default{
+        padding: 5px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+    /* CARDS */
+
+    .cards{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .img-cards{
+        margin-bottom: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background: #e5e7e7;
+        border-radius: 10px;
+    }
+
+    .card-h3{
+        color: var(--primario);
+        font-family: var(--text-primario);
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+
+    .img-cards  p {
+        font-family: var(--text-secundario);
+    }
+
+
+    .img-elegirnos{
+        width: 100%;
+    }
+
+    /* ULTIMAS NOTICIAS */
+
+    .h3-default{
+        font-family: var(--text-primario);
+        color: var(--secundario);
+    }
+
+    .footer{
+        background-color: var(--cuarto);
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .footer-title{
+        color: var(--secundario);
+        padding: 5px;
+        font-family: var(--text-primario);
+        letter-spacing: 1px;
+        font-weight: 200;
+    }
+
+    .footer-instituto  a {
+        text-decoration: none;
+        color: var(--quinto);
+        font-size: 1.1rem;
+    }
+
+
+    .list-footer > li > a {
+        text-decoration: none;
+        color: var(--quinto);
+        font-size: 1.1rem;
+        
+    }
+
+
+
+
+
+}
