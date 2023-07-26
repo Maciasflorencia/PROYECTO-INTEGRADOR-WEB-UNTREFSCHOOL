@@ -80,10 +80,10 @@
     }
 
     .img-escuela{
-         width: 600px;
-         height: 400px;
-         margin: 0 auto;
-             
+        width: 600px;
+        height: 400px;
+        margin: 0 auto;
+        
 
         }
 
@@ -108,13 +108,13 @@
         font-weight: 700;
         font-size: 2.2rem;
         letter-spacing: 1px;
-         }
+        }
     
     .p-default {
         padding: 10px;
         font-family: 'Poppins', sans-serif;
         font-size: 1.2rem;
-         }
+        }
 
     /* CARDS */
 
@@ -180,7 +180,7 @@
 
      /* ULTIMAS NOTICIAS */
 
-     .h3-default{
+    .h3-default{
         font-family: var(--text-primario);
         color: var(--secundario);
         font-size: 1.7rem;
@@ -188,7 +188,7 @@
 
     .footer{
         background-color: var(--cuarto);
-        margin-top: 10px;
+        /* margin-top: 10px; */
         padding: 10px;
         display: flex;
         gap: 20px;
@@ -220,16 +220,76 @@
     }
 
     .footer-redes-sociales li {
-       margin-bottom: 10px; 
-       
+        margin-bottom: 10px; 
     }
 
     .footer-contacto li {
         margin-bottom: 10px;
     }
 
+    /* FORMULARIO  */
 
-}
+    .main{
+        background: rgb(241, 240, 240) ;
+    }
+
+    .form{
+        border: 3px solid var(--primario);
+        width: 50%;
+        height: 100%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        background: #f7fffc;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+    
+    .form-h1{
+        color: var(--primario);
+        font-family: var(--text-primario);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+    
+    .registro > form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        color: var(--primario);
+    }
+
+    .label-form{
+        margin: 5px;
+        font-family: var(--text-secundario);
+        font-size: 1.3rem;
+    }
+
+    .input-form{
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    
+    .butoon{
+        padding: 10px;
+        margin-top: 30px;
+        border-radius: 15px;
+        color: var(--cuarto);
+        background:  #a8d6c6;
+        border: 1px solid var(--primario);
+        
+    } 
+
+    }
+
+
 
 /* TABLET */
 
@@ -327,12 +387,12 @@
         font-weight: 700;
         font-size: 1.8rem;
         letter-spacing: 1px;
-         }
+        }
     
     .p-default {
         padding: 5px;
         font-family: 'Poppins', sans-serif;
-         }
+        }
 
      /* CARDS */
 
@@ -401,7 +461,7 @@
 
      /* ULTIMAS NOTICIAS */
 
-     .h3-default{
+    .h3-default{
         font-family: var(--text-primario);
         color: var(--secundario);
     }
@@ -433,6 +493,67 @@
         font-size: 1.1rem;
         
     }
+
+
+    /* FORMULARIO  */
+
+    .main{
+        background: rgb(241, 240, 240) ;
+    }
+
+    .form{
+        border: 3px solid var(--primario);
+        width: 60%;
+        height: 100%;
+        margin: 0 auto;
+        font-size: 1.3rem;
+        background: #f7fffc;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+
+    }
+    
+    .form-h1{
+        color: var(--primario);
+        font-family: var(--text-primario);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+    
+    .registro > form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        color: var(--primario);
+    }
+
+    .label-form{
+        margin: 5px;
+        font-family: var(--text-secundario);
+        font-size: 1.2rem;
+    }
+
+    .input-form{
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    
+    .butoon{
+        padding: 10px;
+        margin-top: 30px;
+        border-radius: 15px;
+        background:  #a8d6c6;
+        color: var(--cuarto);
+        border: 1px solid var(--primario);
+    } 
+
 
 
 }
@@ -494,8 +615,8 @@
     }
 
     /* SECTION-1 */
- 
-  .section-img{
+
+    .section-img{
     background-image: url(../multimedia/img/escuela.jpg);
     background-position: center;
     background-size: cover;
@@ -617,6 +738,69 @@
         font-size: 1.1rem;
         
     }
+
+
+     /* FORMULARIO  */
+
+    .main{
+        background: rgb(241, 240, 240) ;
+    }
+
+    .form{
+        border: 3px solid var(--primario);
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        font-size: 1rem;
+        background: #f7fffc;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+    
+    .form-h1{
+        color: var(--primario);
+        font-family: var(--text-primario);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+    
+    .registro > form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        color: var(--primario);
+    }
+
+    .label-form{
+        margin: 5px;
+        font-family: var(--text-secundario);
+        font-size: 1rem;
+    }
+
+    .input-form{
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    
+    .butoon{
+        padding: 10px;
+        margin-top: 30px;
+        border-radius: 15px;
+        background:  #a8d6c6;
+        color: var(--cuarto);
+        border: 1px solid var(--primario);
+    } 
+
+
+    
 
 
 
